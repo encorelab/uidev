@@ -10,7 +10,8 @@ import lodash from 'lodash'
 export const defaultState = {
   ui: {}, 
   groups: [], 
-  boxes: []
+  boxes: [],
+  students: []
 }
 
 const empty = {title: "empty", state: {}}
@@ -39,7 +40,9 @@ export const states = stateList.map(e => ({...e, state: {...defaultState, ...e.s
 // of the file
 import BoxPage from './app/components/BoxPage'
 import State from './app/components/State'
+import Students from './app/components/StudentPage'
 export const routes = [
   {title: "Boxes", component: BoxPage},
-  {title: "State", component: State}
+  {title: "State", component: State},
+  {title: "Students", component: Students}
 ]
