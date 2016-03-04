@@ -27,7 +27,7 @@ const manyboxes = {title: "manyboxes", state: { boxes: [
   {title: "Box number two", x: 350, y: 200, text: "Boxes boxes everywhere", id: 2},
   {title: "One box", x: 100, y: 100, text: "This is a box", id: 1}, 
   {title: "Box number two", x: 300, y: 200, text: "Boxes boxes everywhere", id: 2}
-]}}
+], students: ["Peter", "John", "Stian"]}}
 
 const stateList = [
   empty, twoboxes, manyboxes
