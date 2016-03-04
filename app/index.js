@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom'
-import Dropdown from 'react-dropdown'
-require('../node_modules/react-dropdown/dist/style.css')
+import Dropdown from '../vendor/react-dropdown'
+require('../vendor/react-dropdown/dist/style.css')
 
 import { defaultState, states, routes } from '../config'
 
