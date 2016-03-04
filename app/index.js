@@ -26,7 +26,7 @@ class Route extends React.Component {
     states: states, 
     routes: routes,
     route: {title: undefined, component: () => <div></div>},
-    showmenu: false
+    showmenu: true
   }
 
   setRoute = (route) => {
@@ -46,12 +46,12 @@ class Route extends React.Component {
     this.setState({route: {title: label, component: newroute}})
   }
 
-  menu = () => <div style={{height: '50px', width: '100vh', margin: '0px', background: '#ffc'}}>
+  menu = () => <div style={{height: '50px', width: '700px', margin: '0px', background: '#ffc'}}>
     <b>Settings</b> 
     <div style={{top: 0, left: 200, position: 'absolute'}}>
       <Dropdown options={this.routeMenu} placeholder={this.state.route.title || 'Select route' } onChange={this.changeRoute} />
     </div> 
-    <div style={{top: 0, left: 500, position: 'absolute'}}>
+    <div style={{top: 0, left: 400, position: 'absolute'}}>
       <Dropdown options={this.stateMenu} placeholder={this.state.stateName || 'Select state'} onChange={this.changeState} />
     </div>
     <div style={{top: 0, right: 10, position: 'absolute'}}><span onClick={() => this.setState({showmenu: false})}>x</span></div>
