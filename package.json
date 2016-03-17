@@ -38,6 +38,8 @@
     "react-dropdown": "^1.0.2",
     "react-json-inspector": "^6.1.2",
     "react-navbar": "^1.0.0",
+    "react-redux": "^4.4.1",
+    "redux": "^3.3.1",
     "url-loader": "^0.5.7"
   },
   "devDependencies": {

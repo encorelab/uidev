@@ -8,7 +8,7 @@ const Box = ( { title, x, y } ) => <div style={{
   position: "absolute", 
   top: y, 
   left: x
-}}> {title}</div>
+}}> <b>{title}</b></div>
 
 const Boxes = ( { boxes } ) => <div>
   <h1>Boxes</h1>

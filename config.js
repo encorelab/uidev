@@ -40,7 +40,9 @@ export const states = stateList.map(e => ({...e, state: {...defaultState, ...e.s
 // of the file
 import BoxPage from './app/components/BoxPage'
 import State from './app/components/State'
+import StudentList from './app/components/StudentList'
 export const routes = [
   {title: "Boxes", component: BoxPage},
-  {title: "State", component: State}
+  {title: "State", component: State},
+  {title: "StudentList", component: StudentList}
 ]
